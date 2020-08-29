@@ -21,9 +21,9 @@ Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 
 Recursive based approach solution ✍👇💁
  "12"
-              12
+              12                      2 is checked
           /      \
-    2(n==1)     emptystring(n==0)
+    1(n==1) (2)    emptystring(n==0)(12)
    return 1   +   return 1
    
    
@@ -32,17 +32,17 @@ Recursive based approach solution ✍👇💁
  "226"
                 226
               /      \
-           26      +   6(n==1)return 1
-         /    \
-       6(n==1)  empty(n==0)
+           22 (6)     +   2(n==1)return 1  (26)
+         /        \
+       2(n==1)(2)   empty(n==0)(22)
        return 1 +  return 1
        
        
   "10"
-         10
-        /   \
-      0      empty(n==0)
- return 0 +   return 1
+         10  ======> 0 return 0
+        /   
+      empty(10)    
+ return 1 +  0  
  
  
   😍😍😍😍😍😍😍😍 😍😍😍😍😍😍😍😍 😍😍😍😍😍😍😍😍 😍😍😍😍😍😍😍😍 😍😍😍😍😍😍😍😍 😍😍😍😍😍😍😍😍 😍😍😍😍😍😍😍😍 😍😍😍😍😍😍😍😍
